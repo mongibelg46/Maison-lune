@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maison Lune — Objets pour la maison</title>
+<style>
+:root{--cream:#f7f3eb;--ink:#292721;--terra:#b9684e;--muted:#777268}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,sans-serif}
+header{padding:20px 6%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd5c8}
+.logo{font-family:Georgia,serif;font-size:25px;letter-spacing:2px}
+button,input{font:inherit}
+button{cursor:pointer}
+.cart{border:0;background:var(--ink);color:white;border-radius:30px;padding:12px 18px}
+.hero{padding:70px 7% 60px;background:#e9dfd0}
+.hero small{color:var(--terra);text-transform:uppercase;letter-spacing:2px}
+h1{font:clamp(42px,8vw,82px)/.98 Georgia,serif;max-width:700px;margin:18px 0}
+.hero p{color:#59564f;max-width:460px;line-height:1.6}
+.shop{padding:45px 6%}
+.tools{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 30px}
+input,select{padding:12px 14px;border:1px solid #cfc7ba;background:#fffdf9;border-radius:5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px}
+.card{background:#fffdf9;padding:12px;border-radius:7px}
+.photo{height:220px;display:grid;place-items:center;font-size:75px;background:#e9e1d5}
+.card h3{font:22px Georgia,serif;margin:15px 0 5px}
+.card p{color:var(--muted);margin:0 0 12px}
+.buy{width:100%;padding:11px;border:0;background:var(--terra);color:white;border-radius:4px}
+footer{padding:35px 6%;background:#292721;color:white;text-align:center}
+#notice{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#292721;color:white;padding:12px 18px;border-radius:6px;display:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">MAISON LUNE</div>
+  <button class="cart" onclick="showCart()">Panier <span id="count">0</span></button>
+</header>
+<section class="hero">
+  
